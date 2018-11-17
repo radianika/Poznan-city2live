@@ -27,14 +27,18 @@
 		}
 	}
 	&__comments {
-		align-self: center;
-		display: flex;
+
 		background-color: rgba(0, 0, 0, 0.502);
 		width: 100vw;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		padding: 2.6rem 0;
 
+		padding: 2.6rem 0;
+		&--wrapper {
+			align-self: center;
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			@extesnd .wrapper;
+		}
 	}
 }
 
