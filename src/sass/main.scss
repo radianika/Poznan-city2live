@@ -85,6 +85,16 @@ html {
 	display: flex;
 }
 
+.map .title-h2{
+	margin:1.8rem;
+}
+#map{
+	height: 200px;
+	width:100vw;
+	border-bottom: 1px solid #bfbfbf;
+		border-top: 1px solid #bfbfbf;
+
+}
 @import "header.scss";
 @import "welcome.scss";
 @import "aside.scss";
