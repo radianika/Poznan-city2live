@@ -23,7 +23,7 @@ $regular: 'League Gothic';
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style-type: none;
-	color: $text; //	line-height: 1;
+	color: $text;
 }
 
 html {
@@ -35,6 +35,7 @@ html {
 	color: $dark;
 	text-transform: uppercase;
 	font-family: $regular;
+	font-size: $footer-logo;
 	& .light {
 		color: $light;
 	}
@@ -91,14 +92,36 @@ html {
 #map{
 	height: 200px;
 	width:100vw;
-	border-bottom: 1px solid #bfbfbf;
+	border-bottom: 1px solid #787787;
 		border-top: 1px solid #bfbfbf;
 
 }
+.footer{
+	&__navigation{
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		padding: 1.5rem 0.5rem;
+		border-bottom: 1px dotted #787878;
+	}
+	&__copywrite{
+		padding:1.5rem 0 1.1rem;
+		text-transform: uppercase;
+		text-align: center;
+		& p{
+			color: #787878;
+		}
+	}
+}
+
+
 @import "header.scss";
 @import "welcome.scss";
 @import "aside.scss";
 @import "main-post.scss";
 @import "other_posts.scss"
+	
+	
+	
 
 

@@ -29,20 +29,24 @@
 .navigation {
 	text-transform: uppercase;
 	display: flex;
-	&__item {
+	&__item{
 		padding: 0.7em 1.7rem;
 		margin-right: 2rem;
-		border: 1px solid rgba(255, 255, 255, 0);
-		&:hover {
+		border: 1px solid rgba(255, 255, 255, 0);}
+	& .last-item{
+			margin-right: 0;
+	}
+		
+	}
+.btn-blue:hover {
 			border-color: rgb(4, 82, 121);
 			box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
 			background: $dark;
 			color: $contrast;
 			transition: all 0.7s;
 		}
-	}
-}
+	
 
 .active {
-	@extend .navigation__item:hover;
+	@extend .btn-blue:hover;
 }
