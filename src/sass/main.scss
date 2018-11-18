@@ -40,6 +40,10 @@ html {
 	}
 }
 
+.dark {
+	color: $dark;
+}
+
 .wrapper {
 	max-width: 960px;
 	margin: auto;
@@ -84,125 +88,7 @@ html {
 @import "header.scss";
 @import "welcome.scss";
 @import "aside.scss";
+@import "main-post.scss";
+@import "other_posts.scss"
 
 
-
-.main__part {
-	border-right: 1px dotted $light-text;
-			border-bottom: 1px dotted $light-text;
-	&--post {
-		position: relative;
-		top: -12px;
-		background-color: white;
-		padding: 3rem 0 2rem 1.5rem;
-		border-bottom: 1px dotted $light-text;
-		& .title-h2{
-			margin-bottom: 1.8rem;
-		}
-		
-		&__wrapper {
-			display: flex;
-		}
-	}
-}
-
-.circle {
-	width: 5.2rem;
-	height: 5.2rem;
-	border-radius: 2.6rem;
-	background-color: $light;
-	font-size: $small;
-	color: $contrast;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	font-weight: bold;
-	margin-right: 1.2rem;
-	flex-grow: 0;
-	flex-shrink: 0;
-	&:nth-child(2){
-		background: url('../images/user-male-icon.png') no-repeat 50% 50%;
-	}
-	& time {
-		color: inherit;
-	}
-	& .author {
-		color: inherit;
-	}
-}
-
-.post-preview {
-	margin-left: 1.5rem;
-	padding-right: 3rem;
-
-	& p {
-		line-height: 1.8rem;
-		margin-bottom: 3.3rem;
-	}
-	& .btn {
-		border-color: rgb(4, 82, 121);
-		box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
-		background: $dark;
-		color: $contrast;
-		position: relative;
-		padding: 0.7rem 1.4rem;
-
-		&::before {
-			bottom: -4px;
-			height: 3px;
-			width: 100%;
-			background-color: #00141e;
-			content: "";
-			position: absolute;
-			left: -1px;
-			width: 100%;
-			padding: 0px 1px;
-		}
-		&::after {
-			content: "";
-			position: absolute;
-			left: -1px;
-			width: 100%;
-			padding: 0px 1px;
-			background-color: #d6d6d6;
-			bottom: -6px;
-			height: 2px;
-		}
-	}
-}
-
-.post__reaction {
-	position: absolute;
-	padding: 14px 7px 7px 13px;
-	background-color: #90d4f5;
-	width: 30%;
-	right: -5px;
-	color: $dark;
-	bottom:2rem;
-	& span{
-		color: $dark;
-		position: relative;
-		padding-left: 3rem;
-		& img{
-			
-			position: absolute;
-			left: 0;
-		}
-	}
-
-
-	&::after {
-		content: '';
-		background: url("../images/corner.svg");
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 5px;
-		height: 5px;
-		transform: translateY(100%);
-	}
-}
-.likes{
-	margin-right: 1.5rem;
-}

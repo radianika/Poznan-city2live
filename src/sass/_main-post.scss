@@ -1,7 +1,7 @@
 .main__part {
-	border-right: 1px dotted $light-text;
 			border-bottom: 1px dotted $light-text;
 	&--post {
+			border-right: 1px dotted $light-text;
 		position: relative;
 		top: -12px;
 		background-color: white;
