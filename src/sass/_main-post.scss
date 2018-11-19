@@ -1,5 +1,6 @@
 .main__part {
 			border-bottom: 1px dotted $light-text;
+	max-width:79%;
 	&--post {
 			border-right: 1px dotted $light-text;
 		position: relative;
@@ -95,10 +96,12 @@
 		color: $dark;
 		position: relative;
 		padding-left: 3rem;
-		& img{
-			
-			position: absolute;
-			left: 0;
+		& svg{
+
+		position: absolute;
+		left: 0;
+		top:50%;
+		transform: translateY(-50%);
 		}
 	}
 

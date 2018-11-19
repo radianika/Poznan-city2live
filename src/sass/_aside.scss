@@ -30,6 +30,7 @@
 		&__img {
 			border: 1px solid #dddddd;
 			margin-right: 1.8rem;
+			object-fit: contain;
 		}
 		&__info {
 			padding: 0.6rem 0 1rem;
@@ -37,16 +38,13 @@
 		&__title {
 			text-transform: uppercase;
 			font-weight: bold;
+	margin-bottom:5px;
 		}
 		&__comments {
 			font-style: italic;
 			&:hover {
 				text-decoration: underline;
 				text-decoration-color: $light;
-			}
-			& img {
-				margin-right: 0.6rem;
-				transform: translateY(40%);
 			}
 		}
 	}
@@ -87,6 +85,13 @@
 	width: 4rem;
 	height: 2rem;
 	line-height: 2rem;
+	position: relative;
+	& img{
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 
 .th {

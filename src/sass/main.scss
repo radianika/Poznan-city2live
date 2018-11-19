@@ -113,6 +113,17 @@ html {
 		}
 	}
 }
+.post__comments{
+	position: relative;
+	padding-left: 20px;
+	
+	& svg{
+		position: absolute;
+		left: 0;
+		top:50%;
+		transform: translateY(-50%);
+	}
+}
 
 
 @import "header.scss";
