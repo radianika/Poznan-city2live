@@ -1,0 +1,98 @@
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
+	.wrapper{
+		max-width: 768px;
+	}
+	.welcome__text-small{
+		text-align: center;
+	}
+	.main__part{
+		max-width:100%;
+	}
+.main__wrapper{
+	display: flex;
+flex-direction: column;
+	justify-content: center;
+align-items: center;
+	
+	
+	}
+	.left__column{
+		display: flex;
+		justify-content: space-between;
+		max-width:100%;
+		border-right: 0;
+	}
+	.about, .related-posts, .currency{
+		width:33%;
+		border-bottom: 0;
+		padding: 15px;
+	}
+	.main__part--post{
+		top:0;
+		width:100%;
+		border:0;
+		& .top-line{
+			left: -150px;
+		}
+		
+	}
+	.post__reaction:after{
+		display: none;
+	}
+}
+;
+/* Landscape phones and portrait tablets */
+@media(max-width: 767px) {
+	.wrapper{
+		max-width: 480px;
+	}
+	.text{
+		display: none;
+	}
+	.comment__block{
+		margin-bottom: 5px;
+	}
+}
+;
+/* Portrait phones and smaller */
+@media(max-width: 480px) {
+.wrapper{
+		max-width: 90%;
+	}
+	.header__social{
+		display: none;
+	}
+	.left__column{
+		display: none;
+	}
+	.welcome__comments{
+		display: none;
+	}
+	.main__part--post__wrapper{
+		flex-direction: column;
+	}
+	.circle__block{
+		display: flex;
+	}
+	.post__reaction{
+		width: 50%;
+	}
+	.p{
+		display: none;
+	}
+	.other__posts-top{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.footer--navigation .navigation__item{
+		padding:0.7rem 0.5rem;
+	}
+}
+;
+/* Iphone 5 */
+@media(max-width: 320px) {
+
+}

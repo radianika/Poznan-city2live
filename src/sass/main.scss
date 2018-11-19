@@ -124,14 +124,18 @@ html {
 		transform: translateY(-50%);
 	}
 }
+.post-icon{
+	width:16px;
+	height:15px;
+}
 
 
 @import "header.scss";
 @import "welcome.scss";
 @import "aside.scss";
 @import "main-post.scss";
-@import "other_posts.scss"
-	
+@import "other_posts.scss";
+@import "medias.scss";
 	
 	
 

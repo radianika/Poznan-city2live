@@ -2,6 +2,7 @@
 			border-bottom: 1px dotted $light-text;
 	max-width:79%;
 	&--post {
+	margin-right:5px;
 			border-right: 1px dotted $light-text;
 		position: relative;
 		top: -12px;
@@ -92,6 +93,11 @@
 	right: -5px;
 	color: $dark;
 	bottom:2rem;
+text-align: center;
+	& .reaction__block{
+		display: inline;
+
+	}
 	& span{
 		color: $dark;
 		position: relative;
@@ -101,7 +107,10 @@
 		position: absolute;
 		left: 0;
 		top:50%;
-		transform: translateY(-50%);
+		transform: translateY(-60%);
+		}
+		& .text{
+			padding-left: 0.5rem;
 		}
 	}
 
